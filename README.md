@@ -1,2 +1,2 @@
 # skin-notebook
- for identifying skin diseases
+AI for identifying skin diseases
