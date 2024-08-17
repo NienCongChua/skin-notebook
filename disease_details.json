@@ -1,0 +1,44 @@
+{
+    "Actinic Keratoses and Intraepithelial Carcinoma (Bowen's Disease)": {
+        "title": "Actinic Keratoses and Intraepithelial Carcinoma (Bowen's Disease)",
+        "description": "These are rough, scaly patches on the skin that may become cancerous if untreated. Caused mainly by long-term sun exposure.",
+        "symptoms": "Red or brown scaly patches, sensitive to touch.",
+        "treatment": "Cryotherapy, topical treatments, or surgery."
+    },
+    "Basal Cell Carcinoma": {
+        "title": "Basal Cell Carcinoma (BCC)",
+        "description": "A common form of skin cancer caused by prolonged exposure to UV rays. It rarely spreads but requires treatment.",
+        "symptoms": "Flesh-colored or pinkish bumps that may bleed.",
+        "treatment": "Surgery, radiation therapy, or topical medications."
+    },
+    "Benign Keratosis-like Lesions": {
+        "title": "Benign Keratosis-like Lesions (BKL)",
+        "description": "Non-cancerous skin growths often found in older adults, including seborrheic keratoses and age spots.",
+        "symptoms": "Thick, scaly patches ranging in color from light brown to black.",
+        "treatment": "Removal through surgery, cryotherapy, or laser if desired."
+    },
+    "Dermatofibroma": {
+        "title": "Dermatofibroma (DF)",
+        "description": "Benign, firm nodules usually resulting from minor skin injuries. They are harmless and often require no treatment.",
+        "symptoms": "Small, hard lumps, often painful when pressed.",
+        "treatment": "Usually no treatment is needed, but they can be removed surgically."
+    },
+    "Melanoma": {
+        "title": "Melanoma",
+        "description": "The most dangerous form of skin cancer that originates from pigment-producing melanocytes. Early detection is crucial for successful treatment.",
+        "symptoms": "Irregular moles with uneven borders, multiple colors, and rapid growth.",
+        "treatment": "Surgical excision, immunotherapy, and chemotherapy for advanced stages."
+    },
+    "Melanocytic Nevi": {
+        "title": "Melanocytic Nevi (NV)",
+        "description": "Commonly known as moles, these are usually benign growths formed from melanocytes. Regular monitoring is recommended.",
+        "symptoms": "Symmetrical moles with uniform color.",
+        "treatment": "Generally none, unless changes occur. Surgical removal if needed."
+    },
+    "Vascular Lesions": {
+        "title": "Vascular Lesions (VASC)",
+        "description": "Lesions formed from blood vessels, including conditions like hemangiomas and varicose veins.",
+        "symptoms": "Red or bluish discolorations on the skin due to underlying blood vessels.",
+        "treatment": "Laser treatment or surgery if required."
+    }
+}

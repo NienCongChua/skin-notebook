@@ -34,9 +34,10 @@
                 <div id="disease-details" class="disease-details">
                     {% if prediction == 'Unknown' %}
                         <p>Sorry, we don't have information about this disease yet.<br> We will update our database soon. Thank you!</p>
-                    {% else %}
-                        <p>Details about {{ prediction }} will be displayed here.</p>
-                        <!-- Additional disease details can be added here -->
+                    {% elif details %}
+                        <p><strong>{{ details['title'] }}:</strong> {{ details['description'] }}</p>
+                        <p>Symptoms: {{ details['symptoms'] }}</p>
+                        <p>Treatment: {{ details['treatment'] }}</p>
                     {% endif %}
                 </div>
                 <button id="detail-button" class="detail-button">Show Details</button>

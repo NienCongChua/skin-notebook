@@ -2,6 +2,7 @@ import os
 import glob
 import numpy as np
 import tensorflow as tf
+import json
 from flask import Flask, request, render_template, redirect, url_for
 from tensorflow.keras.preprocessing.image import load_img, img_to_array #type: ignore
 
@@ -20,6 +21,9 @@ class_names = [
     'Melanocytic Nevi',  # nv
     'Vascular Lesions'  # vasc
 ]
+
+with open('disease_details.json', 'r') as file:
+    disease_details = json.load(file)
 
 def delete_all_image_files_in_static():
     folder = 'static'
@@ -66,10 +70,10 @@ def upload():
     if file:
         file_path = os.path.join('static', file.filename)
         file.save(file_path)
-
         predicted_class = model_predict(file_path, model, class_names)
+        details = disease_details.get(predicted_class, None)
         print(file.filename)
-        return render_template('index.html', prediction=predicted_class, img_path=file.filename)
+        return render_template('index.html', prediction=predicted_class, img_path=file.filename, details=details)
 
 if __name__ == '__main__':
     app.run(debug=True)
