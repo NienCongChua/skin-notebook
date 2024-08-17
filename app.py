@@ -3,7 +3,7 @@ import glob
 import numpy as np
 import tensorflow as tf
 from flask import Flask, request, render_template, redirect, url_for
-from tensorflow.keras.preprocessing.image import load_img, img_to_array
+from tensorflow.keras.preprocessing.image import load_img, img_to_array #type: ignore
 
 app = Flask(__name__)
 
