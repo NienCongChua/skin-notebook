@@ -1,0 +1,235 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden; 
+}
+
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+    position: relative; 
+}
+
+header h1 {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+header p {
+    color: #7f8c8d;
+    font-weight: 300;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.custom-file-upload {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.custom-file-upload:hover {
+    background-color: #2980b9;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.file-name {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+input[type="submit"],
+.detail-button {
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+}
+
+input[type="submit"]:hover,
+.detail-button:hover {
+    background-color: #27ae60;
+}
+
+/* Result Container */
+.result {
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.result.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container {
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+.disease-details {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    max-height: 0; 
+    transition: max-height 0.5s ease;
+}
+
+.disease-details.show {
+    max-height: 500px; 
+}
+
+.disease-details p {
+    color: #34495e;
+}
+
+.error-message {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 10px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+
+/* Media Queries - Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 20px; 
+    }
+
+    .image-container {
+        max-width: 100%;
+        margin: 10px auto;
+    }
+
+    .disease-details {
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.5em; 
+    }
+}
+
+/* Nút Báo cáo */
+#report-button {
+    background-color: #f44336;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+    text-decoration: none; 
+    margin-top: 10px;
+    
+}
+
+#report-button:hover {
+    background-color: #d32f2f; /* Màu đỏ đậm hơn khi di chuột */
+}
+
+/* Biểu mẫu Báo cáo */
+#report-form {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Màu nền nhạt */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+#report-form h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#report-text {
+    width: 100%;
+    height: 120px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+#report-form button {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#report-form button:hover {
+    background-color: #449d48; /* Màu xanh lá đậm hơn */
+}

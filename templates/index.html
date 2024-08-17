@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skin Disease Diagnosis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Skin Disease Diagnosis</h1>
+            <p>Upload an image to get started</p>
+        </header>
+
+        <form id="upload-form" action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+            <label for="file-upload" class="custom-file-upload">
+                <i class="fas fa-cloud-upload-alt"></i> Choose Image
+            </label>
+            <input id="file-upload" type="file" name="file" accept="image/*">
+            <span id="file-name" class="file-name">No file chosen</span>
+            <input type="submit" value="Upload and Predict">
+        </form>
+        <div id="error-message" class="error-message"></div>
+
+        <div id="result-container" class="result">
+            {% if prediction %}
+                <h2>Prediction: <span id="prediction-text">{{ prediction }}</span></h2>
+                <div class="image-container">
+                    <img id="diagnosed-image" src="{{ url_for('static', filename=img_path) }}" alt="Uploaded Image">
+                </div>
+                <div id="disease-details" class="disease-details">
+                    {% if prediction == 'Unknown' %}
+                        <p>Sorry, we don't have information about this disease yet.<br> We will update our database soon. Thank you!</p>
+                    {% else %}
+                        <p>Details about {{ prediction }} will be displayed here.</p>
+                        <!-- Additional disease details can be added here -->
+                    {% endif %}
+                </div>
+                <button id="detail-button" class="detail-button">Show Details</button>
+                <button id="report-button">Report</button> 
+                <div id="report-form" style="display:none;">
+                    <h3>Report a misdiagnosis</h3>
+                    <textarea id="report-text" placeholder="Enter what issue do you want to report!"></textarea>
+                    <button type="button" onclick="submitReport()">Send report</button>
+                </div>
+            {% endif %}
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
