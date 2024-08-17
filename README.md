@@ -13,21 +13,17 @@ This project is a web application that uses a machine learning model to diagnose
 
 ## Technologies Used
 
-* **Backend:** [Python/Flask/Django/...] (choose one or more)
-* **Machine Learning:** [TensorFlow/Keras/PyTorch/...] (choose one)
+* **Backend:** Python, Flask 
+* **Machine Learning:** TensorFlow, Keras and PyTorch
 * **Frontend:** HTML, CSS, JavaScript
-* **Other:** [Docker/SQLAlchemy/...] (add if applicable)
+* **Other:** None
 
 ## Folder Structure
-skin-notebook/
-├── app/
-│ ├── static/
-│ │ ├── css/
-│ │ └── js/
-│ ├── templates/
-│ └── app.py (or your main file name)
+skin-notebook/\
+├── data3/\
+│ ├── test/\
+│ └── train/\
 ├── model/
-│ └── model.h5 (or your model file name)
 ├── requirements.txt
 └── README.md
 ## Installation
