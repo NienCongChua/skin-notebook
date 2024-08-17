@@ -38,11 +38,12 @@ skin-notebook/\
 ├── predict-colab.ipynb\
 ├── predict.ipynb\
 ├── skin_disease_cnn_model_newv2.keras\
-└── README.md\
+└── README.md
+
 ## Installation
 ### Warming: sure that using Python 3.10 to compile this project
 1. Clone the repository: `git clone https://github.com/NienCongChua/skin-notebook.git`
-2. Download data to skin-notebook
+2. Download the directory data from the link: https:// to train the model
 3. Create a virtual environment: `python3.10 -m venv env`
 4. Activate the virtual environment: `source env/bin/activate`
 5. Install the required libraries: `pip install -r requirements.txt`
