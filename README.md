@@ -14,7 +14,7 @@ This project is a web application that uses a machine learning model to diagnose
 ## Technologies Used
 
 * **Backend:** Python, Flask 
-* **Machine Learning:** TensorFlow, Keras and PyTorch
+* **Machine Learning:** TensorFlow, Keras
 * **Frontend:** HTML, CSS, JavaScript
 * **Other:** None
 
@@ -38,11 +38,11 @@ skin-notebook/\
 ├── predict-colab.ipynb\
 ├── predict.ipynb\
 ├── skin_disease_cnn_model_newv2.keras\
-└── README.md\
+└── README.md
 ## Installation
 ### Warming: sure that using Python 3.10 to compile this project
 1. Clone the repository: `git clone https://github.com/NienCongChua/skin-notebook.git`
-2. Download data to skin-notebook
+2. Download data to skin-notebook from [`this link`](https://drive.google.com/file/d/1Q0MwLhwZ1y8orO4kIakpxJl6hU9bDeip/view?usp=sharing)
 3. Create a virtual environment: `python3.10 -m venv env`
 4. Activate the virtual environment: `source env/bin/activate`
 5. Install the required libraries: `pip install -r requirements.txt`
