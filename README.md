@@ -19,26 +19,26 @@ This project is a web application that uses a machine learning model to diagnose
 * **Other:** None
 
 ## Folder Structure
-skin-notebook/\n
-│\n
-├── data3/\n
-│ ├── test/\n
-│ └── train/\n
-│\n
-├── static/\n
-│ ├── script.js\n
-│ └── style.css\n
-│\n
-├── templates/\n
-│ └── index.html\n
-│\n
-├── requirements.txt\n
-├── app.py\n
-├── disease_details.json\n
-├── predict-colab.ipynb\n
-├── predict.ipynb\n
-├── skin_disease_cnn_model_newv2.keras\n
-└── README.md\n
+skin-notebook/\
+│\
+├── data3/\
+│ ├── test/\
+│ └── train/\
+│\
+├── static/\
+│ ├── script.js\
+│ └── style.css\
+│\
+├── templates/\
+│ └── index.html\
+│\
+├── requirements.txt\
+├── app.py\
+├── disease_details.json\
+├── predict-colab.ipynb\
+├── predict.ipynb\
+├── skin_disease_cnn_model_newv2.keras\
+└── README.md\
 ## Installation
 ### Warming: sure that using Python 3.10 to compile this project
 1. Clone the repository: `git clone https://github.com/NienCongChua/skin-notebook.git`
