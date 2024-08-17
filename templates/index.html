@@ -36,8 +36,8 @@
                         <p>Sorry, we don't have information about this disease yet.<br> We will update our database soon. Thank you!</p>
                     {% elif details %}
                         <p><strong>{{ details['title'] }}:</strong> {{ details['description'] }}</p>
-                        <p>Symptoms: {{ details['symptoms'] }}</p>
-                        <p>Treatment: {{ details['treatment'] }}</p>
+                        <p><strong>Symptoms: </strong> {{ details['symptoms'] }}</p>
+                        <p><strong>Treatment: </strong>{{ details['treatment'] }}</p>
                     {% endif %}
                 </div>
                 <button id="detail-button" class="detail-button">Show Details</button>
