@@ -39,18 +39,19 @@ skin-notebook/\
 ├── predict.ipynb\
 ├── skin_disease_cnn_model_newv2.keras\
 └── README.md
+
 ## Installation
 ### Warming: sure that using Python 3.10 to compile this project
 1. Clone the repository: `git clone https://github.com/NienCongChua/skin-notebook.git`
-2. Download data to skin-notebook from [`this link`](https://drive.google.com/file/d/1Q0MwLhwZ1y8orO4kIakpxJl6hU9bDeip/view?usp=sharing)
+2. Download the directory data from the link: [data3](https://yy17z-my.sharepoint.com/:f:/g/personal/lechingan_yy17z_onmicrosoft_com/Emy6JB8WlnNAkVeYm2aa200B6EFpU8sdkfsGp9z8XbFw1g?e=Y0500R) to train the model
 3. Create a virtual environment: `python3.10 -m venv env`
 4. Activate the virtual environment: `source env/bin/activate`
 5. Install the required libraries: `pip install -r requirements.txt`
-6. Run the application: `python app/app.py` (or your respective command)
+6. Run the application: `python app.py`
 
 ## Usage
 
-1. Open a web browser and go to `http://127.0.0.1:5000/` (or the specified address).
+1. Open a web browser and go to `http://127.0.0.1:5000/`.
 2. Choose an image of the skin lesion you want to diagnose.
 3. Click the "Upload and Predict" button.
 4. View the predicted diagnosis displayed below.
