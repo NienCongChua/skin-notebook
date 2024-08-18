@@ -236,7 +236,7 @@ img {
     background-color: #449d48; /* Màu xanh lá đậm hơn */
 }
 .accuracy-text {
-    font-size: 1.5em; /* Increase font size */
+    font-size: 1.2em; /* Increase font size */
     font-weight: bold;
     color: #ff7847; /* Highlight the text with a different color */
     margin-top: 10px; /* Add some spacing */
@@ -244,5 +244,5 @@ img {
 }
 
 #accuracy-percentage {
-    font-size: 1.5em; /* Even larger for emphasis */
+    font-size: 1.2em; /* Even larger for emphasis */
 }
