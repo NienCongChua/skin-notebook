@@ -49,10 +49,10 @@ def model_predict(img_path, model, class_names, confidence_threshold=0.8):
     predicted_class_confidence = preds[0][predicted_class_index]
 
     if predicted_class_confidence < confidence_threshold:
-        return "Unknown"
+        return "Unknown", predicted_class_confidence
     else:
         predicted_class = class_names[predicted_class_index]
-        return predicted_class
+        return predicted_class, predicted_class_confidence
 
 
 @app.route('/', methods=['GET'])
@@ -70,10 +70,10 @@ def upload():
     if file:
         file_path = os.path.join('static', file.filename)
         file.save(file_path)
-        predicted_class = model_predict(file_path, model, class_names)
+        predicted_class, accurate = model_predict(file_path, model, class_names)
         details = disease_details.get(predicted_class, None)
         print(file.filename)
-        return render_template('index.html', prediction=predicted_class, img_path=file.filename, details=details)
+        return render_template('index.html', prediction=predicted_class, img_path=file.filename, details=details, accuracy=round(accurate*100, 2))
 
 if __name__ == '__main__':
     app.run(debug=True)
