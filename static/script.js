@@ -8,13 +8,15 @@ document.getElementById('upload-form').addEventListener('submit', function(event
     const errorMessage = document.getElementById('error-message');
     if (!fileInput.files.length) {
         event.preventDefault();
-        errorMessage.textContent = 'Please choose an image file';
+        // errorMessage.textContent = 'Please choose an image file!';
+        document.getElementById('error-message');
+            alert('Please choose an image file!');
     } else {
         errorMessage.textContent = ''; 
     }
 });
 
-document.getElementById('detail-button')?.addEventListener('click', function() {
+document.getElementById('det+ail-button')?.addEventListener('click', function() {
     const details = document.getElementById('disease-details');
     details.classList.toggle('show');
     this.textContent = details.classList.contains('show') ? 'Hide Details' : 'Show Details';
@@ -41,9 +43,9 @@ function submitReport() {
 
     if (reportText.trim() === "") { 
         alert("Please enter information to report");
-        return; // Không gửi báo cáo nếu chưa có thông tin
+        return; 
     }
-    // Gửi thông tin báo cáo đến máy chủ (bạn cần triển khai phần xử lý phía máy chủ)
+
     // Sử dụng fetch API:
     fetch('/report', {
         method: 'POST',

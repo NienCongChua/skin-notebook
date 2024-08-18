@@ -157,7 +157,6 @@ img {
     border-radius: 5px;
 }
 
-
 /* Media Queries - Responsive Design */
 @media screen and (max-width: 768px) {
     .container {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.png" type="image/png">
     <title>Skin Disease Diagnosis</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -17,13 +18,14 @@
 
         <form id="upload-form" action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
             <label for="file-upload" class="custom-file-upload">
-                <i class="fas fa-cloud-upload-alt"></i> Choose Image
+                <i class="fas fa-cloud-upload-alt">Choose Image</i>
             </label>
             <input id="file-upload" type="file" name="file" accept="image/*">
             <span id="file-name" class="file-name">No file chosen</span>
             <input type="submit" value="Upload and Predict">
         </form>
-        <div id="error-message" class="error-message"></div>
+        <div id="error-message" class="error-message">
+        </div>
 
         <div id="result-container" class="result">
             {% if prediction %}
