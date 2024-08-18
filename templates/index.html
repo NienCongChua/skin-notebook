@@ -30,6 +30,9 @@
         <div id="result-container" class="result">
             {% if prediction %}
                 <h2>Prediction: <span id="prediction-text">{{ prediction }}</span></h2>
+                {% if prediction != 'Unknown' and accuracy %}
+                    <p class="accuracy-text">Accuracy: <span id="accuracy-percentage">{{ accuracy }}%</span></p>
+                {% endif %}
                 <div class="image-container">
                     <img id="diagnosed-image" src="{{ url_for('static', filename=img_path) }}" alt="Uploaded Image">
                 </div>
