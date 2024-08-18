@@ -16,8 +16,8 @@ body {
     border-radius: 20px;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
     max-width: 800px;
-    width: 100%;
-    min-height: 140%;
+    width: 80%;
+    height: 140%;
     text-align: center;
     position: relative; 
     margin-top: 50px; 
