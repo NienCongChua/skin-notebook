@@ -127,7 +127,7 @@ img {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
-    width: 100%;
+    min-width: 92%;
     max-width: 500px;
     margin: 0 auto; 
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);

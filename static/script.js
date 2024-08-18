@@ -16,7 +16,7 @@ document.getElementById('upload-form').addEventListener('submit', function(event
     }
 });
 
-document.getElementById('det+ail-button')?.addEventListener('click', function() {
+document.getElementById('detail-button')?.addEventListener('click', function() {
     const details = document.getElementById('disease-details');
     details.classList.toggle('show');
     this.textContent = details.classList.contains('show') ? 'Hide Details' : 'Show Details';
