@@ -67,3 +67,6 @@ skin-notebook/\
 
 * Richard Jacob - https://github.com/NienCongChua/
 * Pham Thanh Dat - https://github.com/LewPie/
+
+# Warming
+- If you have any problem with model `skin_disease_cnn_model_newv2.keras`, you can download it from [`my file`](https://yy17z-my.sharepoint.com/:u:/g/personal/lechingan_yy17z_onmicrosoft_com/EW3B6JDA891HvKLeVqjHWtABmXJ6v1pAA9eXRJ8a5GgI4Q?e=aMFUHg)
